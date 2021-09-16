@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E5DE"
+    android:paddingTop="150dp"
+    android:paddingBottom="10dp"
+    tools:context=".OnBoardingTwoActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:paddingBottom="120sp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            app:srcCompat="@drawable/ic_undraw_personal_finance_tqcd" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="344dp"
+            android:layout_height="54dp"
+            android:fontFamily="@font/aladin"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="Set your financial terget !"
+            android:textColor="#FDB305"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="150dp"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
